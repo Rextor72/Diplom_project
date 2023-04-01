@@ -1,17 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Todo List list zalupki</title>
+	<title>Мой красивый сайт</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.navbar {
+			background-color: #fff;
+			border-bottom: 1px solid #ddd;
+			overflow: hidden;
+		}
+
+		.navbar a {
+			float: left;
+			display: block;
+			color: #333;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		.navbar a:hover {
+			background-color: #ddd;
+			color: #333;
+		}
+
+		.content {
+			padding: 20px;
+		}
+
+		.footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-    <h1>Todo List list zalupki</h1>
-    <ul>
-        {% for task in tasks %}
-            <li>
-                <h2>{{ task.title }}</h2>
-                <p>{{ task.description }}</p>
-            </li>
-        {% endfor %}
-    </ul>
+	<header class="header">
+		<h1>Мой красивый сайт</h1>
+	</header>
+
+	<nav class="navbar">
+		<a href="#">Главная</a>
+		<a href="#">О нас</a>
+		<a href="#">Услуги</a>
+		<a href="#">Контакты</a>
+	</nav>
+
+	<div class="content">
+		<h2>Добро пожаловать на мой сайт!</h2>
+		<p>Это пример красивого сайта на HTML. Здесь можно разместить любую информацию.</p>
+		<p>Например, список услуг:</p>
+		<ul>
+			<li>Разработка веб-сайтов</li>
+			<li>Дизайн интерфейсов</li>
+			<li>SEO-оптимизация</li>
+		</ul>
+	</div>
+
+	<footer class="footer">
+		<p>© Мой красивый сайт 2023</p>
+	</footer>
 </body>
 </html>
